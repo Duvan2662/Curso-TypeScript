@@ -4,7 +4,8 @@ import viteLogo from '/vite.svg';
 // import './topic/01-basic-types';
 // import './topic/02-object-interfaces';
 //import './topic/03-functions';
-import './topic/04-homeworks-types';
+// import './topic/04-homeworks-types';
+import './topic/05-basic-destructuring';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
