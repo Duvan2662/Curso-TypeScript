@@ -2,7 +2,8 @@ import './style.css';
 import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
 // import './topic/01-basic-types';
-import './topic/02-object-interfaces';
+// import './topic/02-object-interfaces';
+import './topic/03-functions';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
