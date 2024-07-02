@@ -8,9 +8,24 @@ export class Persona {
         public name: string, 
         private address: string = 'No address'
     ){}
+
+
 }
 
 
-const iroman = new Persona('TonyStarck','Miami');
+export class Heroe extends Persona {
+
+    constructor(
+        public nombreSuper: string, 
+        public age: number,
+        public realName: string,
+    ) {
+        super(realName,'Miami')
+        
+    }
+}
+
+
+const iroman = new Heroe('Iroman',43,'TonyStarck');
 
 console.log(iroman);
