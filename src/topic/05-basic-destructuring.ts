@@ -1,4 +1,4 @@
-
+//Destructuracion de Objetos
 interface AudioPlayer {
     audioVolumen: number;
     songDuration: number;
@@ -22,12 +22,30 @@ const audioPlayer : AudioPlayer = {
 }
 
 //song:cancion -> es como un alias que se le pone a la propiedad
-
 const {song:cancion, songDuration:duracion, details:detalles} = audioPlayer;
-const {author:autor}= detalles
-console.log(`Song: ${cancion}`);
-console.log(`Duration: ${duracion}`);
-console.log(`Author: ${autor}`);
+const {author:autor}= detalles;
+// console.log(`Song: ${cancion}`);
+// console.log(`Duration: ${duracion}`);
+// console.log(`Author: ${autor}`);
+
+
+
+//Destructuracion de Arreglos
+const dbz:string[] = ['Goku','Vegeta','Gohan'];
+const [p1,p2,gohan] = dbz;
+console.log(`Personaje 3: ${gohan}`);
+
+//En caso de que no quiera asignar variables se separa por ,
+const [,,gohan2] = dbz;
+console.log(`Personaje 3: ${gohan2}`);
+
+//Valor por defecto  en caso que el arreglo no tenga el personaje 
+const [p11,p22,gohan3,p4='No existe personaje'] = dbz
+console.log(`Personaje 3: ${p4}`);
+
+
+
+
 
 
 
