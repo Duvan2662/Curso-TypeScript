@@ -6,7 +6,9 @@ import viteLogo from '/vite.svg';
 //import './topic/03-functions';
 // import './topic/04-homeworks-types';
 // import './topic/05-basic-destructuring';
-import './topic/06-function-destructuring';
+// import './topic/06-function-destructuring';
+import './topic/07-import-export';
+
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `

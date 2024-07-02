@@ -107,7 +107,7 @@
 
 
 //Solucion del profesor
-interface Product {
+export interface Product {
     description: string;
     price: number;
 }
@@ -131,7 +131,7 @@ interface TaxCalculationOptions {
 
 
 
-const taxCalculation2 = (options:TaxCalculationOptions):[number,number] => {
+export const taxCalculation2 = (options:TaxCalculationOptions):[number,number] => {
     const {tax,products} = options;
     let total = 0;
     products.forEach(({price}) =>{
@@ -142,18 +142,16 @@ const taxCalculation2 = (options:TaxCalculationOptions):[number,number] => {
 }
 
 
-const shoppingCart: Product[] = [phone,tablet];
-const tax: number = 0.15;
+// const shoppingCart: Product[] = [phone,tablet];
+// const tax: number = 0.15;
 
-const [total,valueTax] = taxCalculation2({
-    tax: tax,
-    products: shoppingCart
-});
+// const [total,valueTax] = taxCalculation2({
+//     tax: tax,
+//     products: shoppingCart
+// });
 
-console.log(`Total: ${total}`)
-console.log(`Tax: ${valueTax}`)
-
-
+// console.log(`Total: ${total}`)
+// console.log(`Tax: ${valueTax}`)
 
 
 
@@ -161,5 +159,3 @@ console.log(`Tax: ${valueTax}`)
 
 
 
-
-export {}
