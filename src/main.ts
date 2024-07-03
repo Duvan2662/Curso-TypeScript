@@ -8,7 +8,10 @@ import viteLogo from '/vite.svg';
 // import './topic/05-basic-destructuring';
 // import './topic/06-function-destructuring';
 // import './topic/07-import-export';
-import './topic/08-classes';
+// import './topic/08-classes';
+import './topic/09-generics';
+
+
 
 
 
