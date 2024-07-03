@@ -10,7 +10,8 @@ import viteLogo from '/vite.svg';
 // import './topic/07-import-export';
 // import './topic/08-classes';
 // import './topic/09-generics';
-import './topic/10-decorators';
+// import './topic/10-decorators';
+import './topic/11-optional-chaining';
 
 
 
