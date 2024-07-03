@@ -13,19 +13,30 @@ export class Persona {
 }
 
 
-export class Heroe extends Persona {
+// export class Heroe extends Persona {
+
+//     constructor(
+//         public nombreSuper: string, 
+//         public age: number,
+//         public realName: string,
+//     ) {
+//         super(realName,'Miami')
+        
+//     }
+// }
+
+export class Heroe{
 
     constructor(
         public nombreSuper: string, 
         public age: number,
         public realName: string,
-    ) {
-        super(realName,'Miami')
-        
+        public persona:Persona
+    ) { 
     }
-}
+} 
 
-
-const iroman = new Heroe('Iroman',43,'TonyStarck');
+const tony = new Persona('Tony Stark','Miami')
+const iroman = new Heroe('Iroman',43,'TonyStarck',tony);
 
 console.log(iroman);
